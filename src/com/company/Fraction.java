@@ -10,7 +10,7 @@ public class Fraction {
     }
 
     public double addition(Fraction fraction) {
-        return (this.convertToRealNumber() + this.convertToRealNumber());
+        return (this.convertToRealNumber() + fraction.convertToRealNumber());
     }
 
     public double addition(double nr) {
@@ -26,11 +26,11 @@ public class Fraction {
     }
 
     public double substraction(double nr) {
-        return this.numerator / this.denominator - nr;
+        return this.convertToRealNumber() - nr;
     }
 
     public double multiply(Fraction fraction) {
-        return (this.convertToRealNumber() * this.convertToRealNumber());
+        return (this.convertToRealNumber() * fraction.convertToRealNumber());
     }
 
     public double multiply(double nr) {
